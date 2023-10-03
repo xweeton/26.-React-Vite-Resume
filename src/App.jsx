@@ -5,9 +5,11 @@ function Header() {
   return (
     <>
       <div className="bg-light p-4 pt-5 pb-5 border rounded">
-        <div className="d-flex justify-content-between">
-          <h1 className="fw-bold">Moglix, Pune</h1>
-          <h1 className="fw-bold border border-dark border-4 p-2">Resume</h1>
+        <div className="row">
+          <h1 className="col-xl-9 fw-bold">Moglix, Pune</h1>
+          <h1 className="col-xl-3 text-center fw-bold border border-dark border-4">
+            Resume
+          </h1>
         </div>
         <p className="m-0">Phone No: +60123456789</p>
         <p className="m-0">Email: punemoglix@gmail.com</p>
@@ -25,21 +27,21 @@ function About() {
         </h2>
         <h4 className="pt-3">Languages:</h4>
         <div className="row">
-          <ul className="col-4">
+          <ul className="col-xl-4">
             <li>Chinese</li>
             <li>Japanese</li>
             <li>Korean</li>
             <li>Thai</li>
             <li>Vietnamese</li>
           </ul>
-          <ul className="col-4">
+          <ul className="col-xl-4">
             <li>Indonesian</li>
             <li>Malay</li>
             <li>Tagalog</li>
             <li>Burmese</li>
             <li>Khmer</li>
           </ul>
-          <ul className="col-4">
+          <ul className="col-xl-4">
             <li>Lao</li>
             <li>Hindi</li>
             <li>Bengali</li>
@@ -61,14 +63,14 @@ function Skill() {
         </h2>
         <h4 className="pt-3">Programming Languages:</h4>
         <div className="row ">
-          <ul className="col-6">
+          <ul className="col-xl-6">
             <li>C#</li>
             <li>C++</li>
             <li>Rust</li>
             <li>Go</li>
             <li>MATLAB</li>
           </ul>
-          <ul className="col-6">
+          <ul className="col-xl-6">
             <li>Erlang</li>
             <li>COBOL</li>
             <li>Ada</li>
@@ -162,10 +164,9 @@ function App() {
 
   return (
     <>
-      <div className="bg-secondary border rounded p-5 m-5">
-        <div className="bg-secondary-subtle border rounded p-5">
+      <div className="bg-secondary border rounded p-3 p-md-5 m-5">
+        <div className="bg-secondary-subtle border rounded p-3 p-md-5">
           <Header />
-
           <div className="row">
             <div className="col-md-6">
               <About />
@@ -177,13 +178,13 @@ function App() {
         </div>
 
         <div className="bg-dark border border-danger rounded mt-5">
-          <div className="text-info p-4 m-5">
+          <div className="text-info p-0 m-5">
             <Experience {...experienceData1} />
             <Experience {...experienceData2} />
             <Experience {...experienceData3} />
           </div>
 
-          <div className="text-warning p-4 m-5">
+          <div className="text-warning p-0 m-5">
             <Education {...educationData1} />
             <Education {...educationData2} />
             <Education {...educationData3} />
