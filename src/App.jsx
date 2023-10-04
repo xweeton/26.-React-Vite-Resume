@@ -4,7 +4,7 @@ import Experience from "./Experience";
 function Header() {
   return (
     <>
-      <div className="bg-light p-4 pt-5 pb-5 border rounded">
+      <div className="bg-light px-5 py-4 border rounded">
         <div className="row">
           <h1 className="col-xl-9 fw-bold">Moglix, Pune</h1>
           <h1 className="col-xl-3 text-center fw-bold border border-dark border-4">
@@ -21,7 +21,7 @@ function Header() {
 function About() {
   return (
     <>
-      <div className="bg-light border rounded p-4 pe-5 ps-5 mt-5 mb-5">
+      <div className="bg-light border rounded px-5 py-4 my-5">
         <h2 className="fw-bold text-decoration-underline text-center">
           About Me
         </h2>
@@ -57,7 +57,7 @@ function About() {
 function Skill() {
   return (
     <>
-      <div className="bg-light border rounded p-4 pe-5 ps-5 mt-5">
+      <div className="bg-light border rounded px-5 py-4 mt-5">
         <h2 className="fw-bold text-decoration-underline text-center">
           Technical Skills
         </h2>
